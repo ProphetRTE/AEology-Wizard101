@@ -40,7 +40,9 @@ jobs:
         run: xcopy /y '.\dist\AEology.exe' ${GITHUB_WORKDIR}
       
       - name: Update version file
-        run: rm LatestVersion.txt && echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt
+        run: |
+          cmd /c rm /q /s /f LatestVersion.txt
+          echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt
 
       - name: Cleanup
         run: |
