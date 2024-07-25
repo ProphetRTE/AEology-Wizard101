@@ -1,0 +1,352 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-04-02 12:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: src/aeologygui.py:125
+msgid ""
+"AEology will always be free and open-source.\n"
+"By using AEology, you agree to the GPL v3 license agreement.\n"
+"If you bought this, you got scammed!"
+msgstr ""
+
+#: src/aeologygui.py:125
+msgid "License Agreement"
+msgstr ""
+
+#: src/aeologygui.py:135
+msgid "Speedhack"
+msgstr ""
+
+#: src/aeologygui.py:136
+msgid "Combat"
+msgstr ""
+
+#: src/aeologygui.py:137
+msgid "Dialogue"
+msgstr ""
+
+#: src/aeologygui.py:138
+msgid "Sigil"
+msgstr ""
+
+#: src/aeologygui.py:139
+msgid "Questing"
+msgstr ""
+
+#: src/aeologygui.py:140
+msgid "Auto Pet"
+msgstr ""
+
+#: src/aeologygui.py:143
+msgid "Quest TP"
+msgstr ""
+
+#: src/aeologygui.py:144
+msgid "Freecam"
+msgstr ""
+
+#: src/aeologygui.py:145
+msgid "Freecam TP"
+msgstr ""
+
+#: src/aeologygui.py:148
+msgid "Mass TP"
+msgstr ""
+
+#: src/aeologygui.py:149
+msgid "XYZ Sync"
+msgstr ""
+
+#: src/aeologygui.py:150
+msgid "X Press"
+msgstr ""
+
+#: src/aeologygui.py:152
+msgid "Disabled"
+msgstr ""
+
+#: src/aeologygui.py:153
+msgid "Toggles"
+msgstr ""
+
+#: src/aeologygui.py:155 src/aeologygui.py:338
+msgid "Hotkeys"
+msgstr ""
+
+#: src/aeologygui.py:157
+msgid "Mass Hotkeys"
+msgstr ""
+
+#: src/aeologygui.py:159
+msgid "Client"
+msgstr ""
+
+#: src/aeologygui.py:165 src/aeologygui.py:198 src/aeologygui.py:249
+msgid "Yaw"
+msgstr ""
+
+#: src/aeologygui.py:167
+msgid "Zone"
+msgstr ""
+
+#: src/aeologygui.py:169
+msgid "Copy Position"
+msgstr ""
+
+#: src/aeologygui.py:170
+msgid "Copy Zone"
+msgstr ""
+
+#: src/aeologygui.py:171
+msgid "Copy Rotation"
+msgstr ""
+
+#: src/aeologygui.py:188
+msgid "Utils"
+msgstr ""
+
+#: src/aeologygui.py:190
+msgid ""
+"The utils below are for advanced users and no support will be given on "
+"them."
+msgstr ""
+
+#: src/aeologygui.py:199
+msgid "Custom TP"
+msgstr ""
+
+#: src/aeologygui.py:202
+msgid "Entity Name"
+msgstr ""
+
+#: src/aeologygui.py:203
+msgid "Entity TP"
+msgstr ""
+
+#: src/aeologygui.py:207
+msgid "TP Utils"
+msgstr ""
+
+#: src/aeologygui.py:212
+msgid "Copy Entity List"
+msgstr ""
+
+#: src/aeologygui.py:213
+msgid "Copy UI Tree"
+msgstr ""
+
+#: src/aeologygui.py:216
+msgid "Zone Name"
+msgstr ""
+
+#: src/aeologygui.py:217
+msgid "Go To Zone"
+msgstr ""
+
+#: src/aeologygui.py:218
+msgid "Mass Go To Zone"
+msgstr ""
+
+#: src/aeologygui.py:221
+msgid "World Name"
+msgstr ""
+
+#: src/aeologygui.py:227
+msgid "Go To World"
+msgstr ""
+
+#: src/aeologygui.py:228
+msgid "Mass Go To World"
+msgstr ""
+
+#: src/aeologygui.py:231
+msgid "Go To Bazaar"
+msgstr ""
+
+#: src/aeologygui.py:232
+msgid "Mass Go To Bazaar"
+msgstr ""
+
+#: src/aeologygui.py:233
+msgid "Refill Potions"
+msgstr ""
+
+#: src/aeologygui.py:234
+msgid "Mass Refill Potions"
+msgstr ""
+
+#: src/aeologygui.py:238 src/aeologygui.py:340
+msgid "Dev Utils"
+msgstr ""
+
+#: src/aeologygui.py:246
+msgid "Set Camera Position"
+msgstr ""
+
+#: src/aeologygui.py:250
+msgid "Roll"
+msgstr ""
+
+#: src/aeologygui.py:251
+msgid "Pitch"
+msgstr ""
+
+#: src/aeologygui.py:254
+msgid "Entity"
+msgstr ""
+
+#: src/aeologygui.py:255
+msgid "Anchor"
+msgstr ""
+
+#: src/aeologygui.py:256
+msgid "Toggle Camera Collision"
+msgstr ""
+
+#: src/aeologygui.py:259
+msgid "Distance"
+msgstr ""
+
+#: src/aeologygui.py:260
+msgid "Min"
+msgstr ""
+
+#: src/aeologygui.py:261
+msgid "Max"
+msgstr ""
+
+#: src/aeologygui.py:262
+msgid "Set Distance"
+msgstr ""
+
+#: src/aeologygui.py:265
+msgid "Copy Camera Position"
+msgstr ""
+
+#: src/aeologygui.py:266
+msgid "Copy Camera Rotation"
+msgstr ""
+
+#: src/aeologygui.py:270
+msgid "Camera Controls"
+msgstr ""
+
+#: src/aeologygui.py:275
+msgid "Caster/Target Indices"
+msgstr ""
+
+#: src/aeologygui.py:277
+msgid "Dmg"
+msgstr ""
+
+#: src/aeologygui.py:278
+msgid "School"
+msgstr ""
+
+#: src/aeologygui.py:281
+msgid "Crit"
+msgstr ""
+
+#: src/aeologygui.py:282
+msgid "View Stats"
+msgstr ""
+
+#: src/aeologygui.py:283
+msgid "Copy Stats"
+msgstr ""
+
+#: src/aeologygui.py:285
+msgid "No client has been selected."
+msgstr ""
+
+#: src/aeologygui.py:287
+msgid "Swap Members"
+msgstr ""
+
+#: src/aeologygui.py:288
+msgid "Force School Damage"
+msgstr ""
+
+#: src/aeologygui.py:293 src/aeologygui.py:341
+msgid "Stat Viewer"
+msgstr ""
+
+#: src/aeologygui.py:300
+msgid "Import Flythrough"
+msgstr ""
+
+#: src/aeologygui.py:302
+msgid "Export Flythrough"
+msgstr ""
+
+#: src/aeologygui.py:303
+msgid "Execute Flythrough"
+msgstr ""
+
+#: src/aeologygui.py:304
+msgid "Kill Flythrough"
+msgstr ""
+
+#: src/aeologygui.py:308
+msgid "Flythrough Creator"
+msgstr ""
+
+#: src/aeologygui.py:318
+msgid "Run Bot"
+msgstr ""
+
+#: src/aeologygui.py:319
+msgid "Kill Bot"
+msgstr ""
+
+#: src/aeologygui.py:323
+msgid "Bot Creator"
+msgstr ""
+
+#: src/aeologygui.py:328
+msgid "Scale"
+msgstr ""
+
+#: src/aeologygui.py:329
+msgid "Set Scale"
+msgstr ""
+
+#: src/aeologygui.py:334
+msgid "Misc Utils"
+msgstr ""
+
+#: src/aeologygui.py:339
+msgid "Camera"
+msgstr ""
+
+#: src/aeologygui.py:342
+msgid "Flythrough"
+msgstr ""
+
+#: src/aeologygui.py:343
+msgid "Bot"
+msgstr ""
+
+#: src/aeologygui.py:344
+msgid "Misc"
+msgstr ""
+
+#: src/aeologygui.py:349
+msgid "AEology will always be a free tool. If you paid for this, you got scammed!"
+msgstr ""
+

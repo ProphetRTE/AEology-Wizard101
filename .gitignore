@@ -1,0 +1,4 @@
+*.pyc
+logs/
+AEology-Testconfig.ini
+/.vs
