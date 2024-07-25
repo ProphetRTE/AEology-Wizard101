@@ -41,7 +41,7 @@ jobs:
       
       - name: Update version file
         run: |
-          cmd /c rm /q /s /f LatestVersion.txt
+          Remove-Item -Path LatestVersion.txt -Force
           echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt
 
       - name: Cleanup
