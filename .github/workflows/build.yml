@@ -41,8 +41,8 @@ jobs:
       
       - name: Update version file
         run: |
-          Remove-Item -Path LatestVersion.txt -Force
-          echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt
+          ```Remove-Item -Path LatestVersion.txt -Force
+          echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt```
 
       - name: Cleanup
         run: |
