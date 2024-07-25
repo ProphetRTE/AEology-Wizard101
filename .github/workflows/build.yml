@@ -68,7 +68,7 @@ jobs:
         run: Compress-Archive -Path AEology.exe, README.txt, LICENSE, AEology-config.ini -DestinationPath 'AEology-${{ env.RELEASE_VERSION }}.zip'
 
       - name: Publish release
-        uses: softprops/action-gh-release@1
+        uses: softprops/action-gh-release@v1
         with:
           files: AEology-${{ env.RELEASE_VERSION }}.zip
           release_name: ${{ env.RELEASE_VERSION }}
