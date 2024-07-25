@@ -68,3 +68,4 @@ jobs:
           files: AEology-${{ env.RELEASE_VERSION }}.zip
           tag_name: ${{ env.RELEASE_VERSION }}
           generate_release_notes: yes
+          tag: ${{ env.RELEASE_VERSION }}
