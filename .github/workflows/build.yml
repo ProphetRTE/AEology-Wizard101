@@ -39,11 +39,6 @@ jobs:
       - name: Copy exe
         run: xcopy /y '.\dist\AEology.exe' ${GITHUB_WORKDIR}
       
-      - name: Update version file
-        run: |
-          ```Remove-Item -Path LatestVersion.txt -Force
-          echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt```
-
       - name: Cleanup
         run: |
           rm -r -fo dist
