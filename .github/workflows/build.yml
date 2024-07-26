@@ -43,7 +43,7 @@ jobs:
       - name: Update version file
         run: |
             rm LatestVersion.txt
-            echo ${{ $env:RELEASE_VERSION }} > LatestVersion.txt
+            echo ${env:RELEASE_VERSION} > LatestVersion.txt
 
       - name: Cleanup
         run: |
