@@ -39,6 +39,11 @@ jobs:
       - name: Copy exe
         run: xcopy /y '.\dist\AEology.exe' ${GITHUB_WORKDIR}
       
+      - name: Update version file
+        run: |
+            rm LatestVersion.txt
+            echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt
+
       - name: Cleanup
         run: |
           rm -r -fo dist
@@ -62,15 +67,9 @@ jobs:
       - name: Create release zip
         run: Compress-Archive -Path AEology.exe, README.txt, LICENSE, AEology-config.ini -DestinationPath 'AEology-${{ env.RELEASE_VERSION }}.zip'
     
-      - name: Tag
-        if: startsWith(github.ref, 'refs/heads/release/')
-        run: |
-            git tag ${{ env.RELEASE_VERSION }}
-            git push origin ${{ env.RELEASE_VERSION }}
-
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
           files: AEology-${{ env.RELEASE_VERSION }}.zip
-          tag_name: ${{ env.RELEASE_VERSION }}
+          release_name: ${{ env.RELEASE_VERSION }}
           generate_release_notes: yes
