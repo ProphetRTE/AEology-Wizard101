@@ -1986,7 +1986,7 @@ def handle_tool_updating():
 	except:
 		time.sleep(0.1)
 
-	if update_server is not None and update_server[1].lower() == 'false':
+	if update_server is not None and len(update_server) > 1 and update_server[1].lower() == 'false':
 		raise KeyboardInterrupt
 
 	if update_server is not None:
@@ -2013,7 +2013,7 @@ def handle_tool_updating():
 
 if __name__ == "__main__":
 	# Validate configs and update the tool
-	handle_tool_updating()
+	#handle_tool_updating()
 
 	current_log = logger.add(f"logs/{tool_name} - {generate_timestamp()}.log", encoding='utf-8', enqueue=True, backtrace=True)
 

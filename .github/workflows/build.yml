@@ -1,8 +1,7 @@
 name: Build AEology
 
 env:
-    LATEST_VERSION: "3.8.5 True"    
-    RELEASE_VERSION: "3.8.5"  
+    RELEASE_VERSION: "3.8.5"    
 
 on:
   push:
@@ -46,8 +45,8 @@ jobs:
       
       - name: Update version file
         run: |
-          rm LatestVersion.txt
-          echo ${{ env.LATEST_VERSION }} > LatestVersion.txt
+            rm LatestVersion.txt
+            echo ${{ env.RELEASE_VERSION }} > LatestVersion.txt
 
       - name: Cleanup
         run: |
