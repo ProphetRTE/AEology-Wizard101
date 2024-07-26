@@ -15,7 +15,6 @@ This tool gets updated when I have free time from college, and my personal proje
 You can also close AEology by closing out the GUI, just never close out the CMD window.
 
 </details>
-Tutorial:
 
 <details>
 <summary>Hotkeys</summary>
