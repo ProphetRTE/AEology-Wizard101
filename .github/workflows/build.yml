@@ -43,7 +43,7 @@ jobs:
       - name: Update version file
         run: |
             rm LatestVersion.txt
-            echo ${{ env.RELEASE_VERSION }} "True" > LatestVersion.txt
+            echo ${{ vars.RELEASE_VERSION }} "True" > LatestVersion.txt
 
       - name: Cleanup
         run: |
@@ -66,11 +66,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create release zip
-        run: Compress-Archive -Path AEology.exe, README.md, LICENSE, AEology-config.ini -DestinationPath 'AEology-${{ env.RELEASE_VERSION }}.zip'
+        run: Compress-Archive -Path AEology.exe, README.md, LICENSE, AEology-config.ini -DestinationPath 'AEology-${{ vars.RELEASE_VERSION }}.zip'
     
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
-          files: AEology-${{ env.RELEASE_VERSION }}.zip
-          tag_name: ${{ env.RELEASE_VERSION }}
+          files: AEology-${{ vars.RELEASE_VERSION }}.zip
+          tag_name: ${{ vars.RELEASE_VERSION }}
           generate_release_notes: yes
