@@ -50,7 +50,7 @@ from src.tokenizer import tokenize
 cMessageBox = ctypes.windll.user32.MessageBoxW
 
 
-tool_version = '3.8.1'
+tool_version = '3.8.5'
 tool_name = 'AEology'
 tool_author = 'ProphetRTE'
 repo_name = tool_name + '-Wizard101'
@@ -1986,7 +1986,7 @@ def handle_tool_updating():
 	except:
 		time.sleep(0.1)
 
-	if update_server is not None and len(update_server) > 1 and update_server[1].lower() == 'false':
+	if update_server is not None and update_server[1].lower() == 'false':
 		raise KeyboardInterrupt
 
 	if update_server is not None:
