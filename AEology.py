@@ -50,7 +50,7 @@ from src.tokenizer import tokenize
 cMessageBox = ctypes.windll.user32.MessageBoxW
 
 
-tool_version = '3.8.5'
+tool_version = '3.8.6'
 tool_name = 'AEology'
 tool_author = 'ProphetRTE'
 repo_name = tool_name + '-Wizard101'
