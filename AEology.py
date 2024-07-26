@@ -272,8 +272,8 @@ def config_update():
 		download_file(url=config_url, file_name=f'{tool_name}-config.ini')
 		time.sleep(0.1)
 
-	if not os.path.exists(f'README.txt'):
-		download_file(f'https://raw.githubusercontent.com/{tool_author}/{repo_name}/{branch}/README.txt', 'README.txt')
+	if not os.path.exists(f'README.md'):
+		download_file(f'https://raw.githubusercontent.com/{tool_author}/{repo_name}/{branch}/README.md', 'README.md')
 
 	download_file(url=config_url, file_name=f'{tool_name}-Testconfig.ini', delete_previous=True, debug=False)
 	time.sleep(0.1)
