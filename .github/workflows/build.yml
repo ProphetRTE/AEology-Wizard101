@@ -42,8 +42,8 @@ jobs:
       
       - name: Update version file
         run: |
-          Remove-Item -Path LatestVersion.txt -Force
-          Set-Content -Path LatestVersion.txt -Value $env:RELEASE_VERSION
+            rm LatestVersion.txt
+            echo $env:RELEASE_VERSION > LatestVersion.txt
 
       - name: Cleanup
         run: |
@@ -71,6 +71,6 @@ jobs:
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
-          files: AEology-${{ env.RELEASE_VERSION }}.zip
-          release_name: ${{ env.RELEASE_VERSION }}
+          files: AEology-$env:RELEASE_VERSION.zip
+          tag_name: $env:RELEASE_VERSION
           generate_release_notes: yes
