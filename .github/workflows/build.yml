@@ -1,8 +1,5 @@
 name: Build AEology
 
-env:
-    RELEASE_VERSION: "3.8.5"    
-
 on:
   push:
     tags:
