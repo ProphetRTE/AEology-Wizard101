@@ -1,3 +1,5 @@
+#Credit to: Slackaduts for the base of Deimos. you can find it [here.](https://github.com/Slackaduts/Deimos-Wizard101)
+
 Tutorial:
 To run, be sure all your wiz clients are ordered correctly (p2 should be below and to the right of p1, etc), and all logged into the desired wizard. 
 Run the AEology.exe by double clicking it. Pay attention to the blue text on the window that shows up, as it will tell you when the program is ready after lauching.
