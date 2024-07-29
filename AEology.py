@@ -1796,9 +1796,9 @@ async def main():
 	walker = ClientHandler()
 	
 	walker.clients = []
-	print(f'Deimos has a discord, as this project relies on it! Join here,:')
+	print(f'Deimos has a new discord! You should join it here!:')
 	print('https://discord.gg/59UrPJwYDm')
-	print('Be sure to join the WizWalker discord, as this project is built using it. Join here:')
+	print('Be sure to join the WizWalker discord too, as this project is built using it. Join here:')
 	print('https://discord.gg/JHrdCNK')
 	print('\n')
 	
