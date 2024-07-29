@@ -50,7 +50,7 @@ from src.tokenizer import tokenize
 cMessageBox = ctypes.windll.user32.MessageBoxW
 
 
-tool_version = '3.8.6'
+tool_version = '3.8.7'
 tool_name = 'AEology'
 tool_author = 'ProphetRTE'
 repo_name = tool_name + '-Wizard101'
@@ -102,17 +102,20 @@ def read_config(config_name : str):
 	global auto_updating
 	global speed_multiplier
 	global use_potions
-	global rpc_status
 	global drop_status
 	global anti_afk_status
 	auto_updating = parser.getboolean('settings', 'auto_updating', fallback=True)
 	speed_multiplier = parser.getfloat('settings', 'speed_multiplier', fallback=5.0)
 	use_potions = parser.getboolean('settings', 'use_potions', fallback=True)
-	rpc_status = parser.getboolean('settings', 'rich_presence', fallback=True)
 	drop_status = parser.getboolean('settings', 'drop_logging', fallback=True)
 	anti_afk_status = parser.getboolean('settings', 'use_anti_afk', fallback=True) 
-
-
+	
+	#Discord Settings
+	global rpc_status
+	global discord_bot_id
+	rpc_status = parser.getboolean('settings', 'rich_presence', fallback=True)
+	discord_bot_id = parser.getint('discord_settings', 'discord_bot_id', fallback=0)
+	
 	# Hotkeys
 	global x_press_key
 	global sync_locations_key
@@ -151,7 +154,7 @@ def read_config(config_name : str):
 	gui_on_top = parser.getboolean('gui', 'on_top', fallback=True)
 	gui_theme = parser.get('gui', 'theme', fallback='Black')
 	gui_text_color = parser.get('gui', 'text_color', fallback='white')
-	gui_button_color = parser.get('gui', 'button_color', fallback='#4a019e')
+	gui_button_color = parser.get('gui', 'button_color', fallback='#960f00')
 	gui_langcode = parser.get('gui', 'locale', fallback='en')
 
 
@@ -195,6 +198,7 @@ def read_config(config_name : str):
 	global only_play_dance_game
 	ignore_pet_level_up = parser.getboolean('auto pet', 'ignore_pet_level_up', fallback=False)
 	only_play_dance_game = parser.getboolean('auto pet', 'only_play_dance_game', fallback=False)
+
 
 
 while True:
@@ -1612,17 +1616,17 @@ async def main():
 
 		await asyncio.gather(*[async_potion(p) for p in walker.clients])
 
-
+		
 	async def rpc_loop():
-		if rpc_status:
+		
+		if rpc_status & discord_bot_id != 0:
 			# Connect to the discord dev app
 			try:
-				rpc = AioPresence(1000159655357587566)
+				rpc = AioPresence(discord_bot_id)
 				await rpc.connect()
 
 			except Exception as e:
 				logger.error(e)
-
 			# except pypresence.exceptions.PyPresenceException:
 			# 	pass
 
@@ -1790,12 +1794,14 @@ async def main():
 
 	await asyncio.sleep(0)
 	walker = ClientHandler()
-	# walker.clients = []
-	#print(f'{tool_name} now has a discord! Join here:')
-	#print('https://discord.gg/59UrPJwYDm')
-	#print('Be sure to join the WizWalker discord, as this project is built using it. Join here:')
-	#print('https://discord.gg/JHrdCNK')
-	#print('\n')
+	
+	walker.clients = []
+	print(f'Deimos has a discord, as this project relies on it! Join here,:')
+	print('https://discord.gg/59UrPJwYDm')
+	print('Be sure to join the WizWalker discord, as this project is built using it. Join here:')
+	print('https://discord.gg/JHrdCNK')
+	print('\n')
+	
 	logger.debug(f'Welcome to {tool_name} version {tool_version}!')
 
 	async def ban_watcher():
